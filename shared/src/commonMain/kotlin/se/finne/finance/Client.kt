@@ -7,7 +7,7 @@ private val client = getClient()
 
 const val BASE_URL = "http://localhost:8082"
 class ClientServer(){
-
+    // TODO("Native Corotuoins")
     suspend fun greet(): String {
         return client.get(BASE_URL).body<String>()
     }
